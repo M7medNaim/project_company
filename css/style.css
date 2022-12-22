@@ -1,0 +1,163 @@
+/* Global css style*/
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: #222;
+    color: #fff;
+    font-family: system-ui;
+}
+
+.crud {
+    width: 80%;
+    margin: auto;
+}
+/*  -- Global css style -- */
+
+.head {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+input {
+    width: 100%;
+    height: 30px;
+    border: none;
+    background: #111;
+    padding: 4px ;
+    margin: 4px  0 ;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    color:rgb(178, 177, 177) ;
+}
+input:focus {
+    background: #000;
+    color: #fff;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.price input{
+    width: 20%;
+}
+#total {
+    background: #a00d02;
+    padding: 5px 2px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+#total::before {
+    content: "Total:";
+}
+button {
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background: #470053;
+    color: #fff;
+    border-radius:20px ;
+    -webkit-border-radius:20px ;
+    -moz-border-radius:20px ;
+    -ms-border-radius:20px ;
+    -o-border-radius:20px ;
+}
+button:hover {
+    background: #51025f;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.btnSearch{
+    display: flex;
+    justify-content: space-between;
+}
+.btnSearch button{
+    width: 45%;
+}
+
+#deleteAll {
+    margin:20px 0  ;
+}
+.outputs {
+    width: 100%;
+}
+table {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+table th {
+    text-transform: uppercase;
+}
+th , td {
+    padding: 5px;
+}
+
+/* media query */
+
+@media (max-width : 400px) {
+    table th {
+        display: none;
+    }
+    .title , .update {
+        display: inline-block;
+        padding: 8px 20px;
+        
+    }
+    table td {
+        display: none;
+    }
+    
+}
+
+@media (min-width : 400px) and (max-width : 550px) {
+    table th {
+        display: none;
+    }
+    .id , .title , .update , .delete {
+        display: inline-block;
+        padding: 8px 20px;
+        
+    }
+    table td {
+        display: none;
+    }
+    
+}
+
+@media (min-width : 550px) and (max-width : 776px) {
+    table th {
+        display: none;
+    } 
+    .id , .title , .update , .delete , .price {
+        display: inline-block;
+        padding: 8px 20px;
+        
+    } 
+    table td {
+        display: none;
+    }
+    
+}
+
